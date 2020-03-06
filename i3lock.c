@@ -551,11 +551,11 @@ static void input_done(void) {
         if (strcmp(mod_name, XKB_MOD_NAME_CAPS) == 0)
             mod_name = "Caps Lock";
         else if (strcmp(mod_name, XKB_MOD_NAME_ALT) == 0)
-            mod_name = "Alt";
+            continue;
         else if (strcmp(mod_name, XKB_MOD_NAME_NUM) == 0)
-            mod_name = "Num Lock";
+            continue;
         else if (strcmp(mod_name, XKB_MOD_NAME_LOGO) == 0)
-            mod_name = "Super";
+            continue;
 
         char *tmp;
         if (modifier_string == NULL) {
